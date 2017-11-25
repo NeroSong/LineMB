@@ -16,7 +16,6 @@ MOD_CONTROL = 0x0002
 MOD_SHIFT = 0x0004
 WM_KEYUP = 0x0101
 
-
 class MSG(Structure):
     _fields_ = [('hwnd', c_int),
                 ('message', c_uint),
@@ -34,7 +33,6 @@ msg = MSG()
 # app = QApplication(sys.argv)
 # w = test01.Test()
 # w.show()
-
 app = QApplication(sys.argv)
 test = test01.Test()
 desktop = QApplication.desktop()
